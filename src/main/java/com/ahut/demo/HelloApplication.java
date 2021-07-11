@@ -23,6 +23,12 @@ public class HelloApplication {
         return "hello world2";
     }
 
+    @RequestMapping(value = "/hello3", method = RequestMethod.POST)
+    @ResponseBody
+    public String hello3() {
+        return "hello world3";
+    }
+
 	// 在main方法中启动一个应用，即：这个应用的入口
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
